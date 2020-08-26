@@ -8,9 +8,9 @@
   align-items: center;
   background-color: #2e294e;
   background-size: 100px 100px;
-  background-image: radial-gradient($primary-color 6px, transparent 6px);
+  background-image: radial-gradient($primary_color 6px, transparent 6px);
   h1 {
-    color: $primary-color;
+    color: $primary_color;
   }
 }
 .Form {
@@ -22,11 +22,30 @@
   align-items: center;
   border: 12px solid black;
   background: black;
-  color: $primary-color;
+  color: $primary_color;
+  font-family: $font_family;
   input {
-    height: 20px;
+    height: 1.5rem;
+    font-family: $alt_font_family;
+
     width: 20%;
-    // border: 4px solid $primary-color;
+    // border: 4px solid $primary_color;
     // border-radius: 6px;
+  }
+
+  .submitBtn {
+    background-color: black;
+    margin: 1rem;
+    padding: 0.55rem 1.2rem;
+    border: 4px solid $primary_color;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: 300;
+    text-align: center;
+    color: $primary_color;
+    &:hover {
+      color: black;
+      background-color: $primary_color;
+    }
   }
 }

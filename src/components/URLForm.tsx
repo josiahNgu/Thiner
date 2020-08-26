@@ -33,7 +33,9 @@ const URLForm = (): JSX.Element => {
         <label>Magic Word (Max Chars: 5)</label>
         <br />
         <input value={keyword} onChange={keywordHandler} />
-        <button type="submit">Submit</button>
+        <button type="submit" className="submitBtn">
+          Submit
+        </button>
       </form>
     </div>
   );
