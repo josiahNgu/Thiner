@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory, Redirect } from "react-router-dom";
 import axios from "axios";
-const RedirectLink = (props: any): JSX.Element => {
+const RedirectLink = (props: any): any => {
   const {
     match: { params },
   } = props;
@@ -21,11 +21,6 @@ const RedirectLink = (props: any): JSX.Element => {
     };
     getOriginalLink();
   }, [params.keyword, props]);
-  return (
-    <h1>
-      Loading....
-      {shouldRedirect ? <Redirect to="/" /> : ""}
-    </h1>
-  );
+  return shouldRedirect ? <Redirect to="/" /> : "";
 };
 export default RedirectLink;

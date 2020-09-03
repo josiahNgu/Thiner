@@ -12,6 +12,6 @@ it("post user originalLink and motto to database", async () => {
     statusCode: 201,
     motto: "test",
   });
-  await expect(submitHandler).toBe("");
+  await expect(component.).toBe("");
   // expect(getByTestId("originalURL")).toHaveTextContent();
 });
